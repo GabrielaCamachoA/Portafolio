@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section2">
+        <article>
+            <div id="home">
+                <h1>Hello, I'm Gabriela Camacho</h1>
+                <p>Web Developer & Designer</p>
+            </div>
+            <div id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Your photo">
+                    <p>A brief bio about yourself, your skills, and experience.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    
+
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid">
+            <div class="project">
+                    <img src="./img/tarjeta-removebg-preview.png" alt="Project 1">
+                <div class="tarjeta">
+                    <h3>Project Title</h3>
+                <a href="https://gabrielacamachoa.github.io/Tarjeta-Credito/" target="_blank">Ver más!</a>
+                </div>
+            </div>
+            <div class="project">
+                    <video width="250" height="222" autoplay muted loop>
+                        <source src="./img/video.mp4" type="video/mp4">
+                    </video>
+                    <div class="tarjeta">
+                        <h3>Project Title</h3>
+                    <a href="https://gabrielacamachoa.github.io/Periodico/" target="_blank">Ver más!</a>
+                    </div>
+            </div>
+            <div class="project">
+                    <video width="250" height="222" autoplay muted loop>
+                        <source src="./img/galeria.mp4" type="video/mp4">
+                    </video>
+                    <div class="tarjeta">
+                        <h3>Project Title</h3>
+                    <a href="https://gabrielacamachoa.github.io/CambioGaleria/" target="_blank">Ver más!</a>
+                    </div>
+            </div>
+            <div class="project">
+                <video width="222" height="222" autoplay muted loop>
+                    <source src="./img/tablaM.mp4" type="video/mp4">
+                </video>
+                <div class="tarjeta">
+                    <h3>Project Title</h3>
+                    <a href="https://gabrielacamachoa.github.io/TablaM/" target="_blank">Ver más!</a>
+                </div>
+            </div>
+            <div class="project">
+                    <video width="250" height="222" autoplay muted loop>
+                        <source src="./img/montaña.mp4" type="video/mp4">
+                    </video>
+                    <div class="tarjeta">
+                        <h3>Project Title</h3>
+                    <a href="https://gabrielacamachoa.github.io/Monta-a/" target="_blank">Ver más!</a>
+                    </div>
+            </div>
+            <div class="project">
+                    <video width="250" height="222" autoplay muted loop>
+                        <source src="./img/form.mp4" type="video/mp4">
+                    </video>
+                    <div class="tarjeta">
+                        <h3>Project Title</h3>
+                    <a href="https://gabrielacamachoa.github.io/Formulario-ModoOscuro/" target="_blank">Ver más!</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Gabriela Camacho | Follow me on
+            <a href="https://twitter.com">Twitter</a>,
+            <a href="https://github.com"> GitHub</a>
+        </p>
+    </footer>
+</body>
+
+</html>
