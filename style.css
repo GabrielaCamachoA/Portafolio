@@ -155,6 +155,7 @@ nav ul li a {
     color: #000;
     filter: brightness(50%);
     transition: .2s;
+    cursor: pointer;
 }
 .project:hover{
     filter: brightness(1);
