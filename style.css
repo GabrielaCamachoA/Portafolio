@@ -72,6 +72,7 @@ nav ul li a {
     animation-timeline: scroll(y);
     animation-range-start: 100vh;
     animation-range-end: 300vh;
+    transform-origin: left;
 }
 #home:before {
 	content:'';
@@ -101,13 +102,15 @@ nav ul li a {
 
 @keyframes mover-izquierda {
     0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(100%); 
-    }
-    100% {
-        transform: translateX(0);
+         transform: scaleX(0);
+        }
+        50% {
+            transform: scaleX(200%);
+            /* transform: translateX(100%);  */
+        }
+        100% {
+        transform: scaleX(0);
+        /* transform: translateX(0); */
     }
 }
 
@@ -153,12 +156,11 @@ nav ul li a {
     margin-bottom: 20px;
     border-radius: 10px;
     color: #000;
-    filter: brightness(50%);
     transition: .2s;
     cursor: pointer;
 }
 .project:hover{
-    filter: brightness(1);
+    filter: brightness(50%);
 }
 #contact{
     display: flex;
