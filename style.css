@@ -56,10 +56,10 @@ nav ul li a {
 
 .section2 #home,
 .section2 #about {
-  flex: 1; /* Los divs ocupan el mismo espacio */
+  /* flex: 1; Los divs ocupan el mismo espacio */
   padding: 32px;
   height: 100vh;
-  width: 100%;
+  width: 200%;
 }
 
 .section2 #home {
@@ -73,6 +73,8 @@ nav ul li a {
   animation-timeline: scroll(y);
   animation-range-start: 100vh;
   animation-range-end: 300vh;
+  width: 600%;
+  z-index: 1;
 }
 #home:before {
   content: "";
@@ -103,19 +105,20 @@ nav ul li a {
 
 @keyframes mover-izquierda {
   0% {
-    width: 200%;
     /* transform: scaleX(100%); */
+    width: 200%;
     transform-origin: left;
 }
 50% {
     transform-box: none;
-    transform: scaleX(200%);
     width: 200%;
+    transform: scaleX(200%);
     /* transform: translateX(100%);  */
     transform-origin: left;
   }
   100% {
     transform-origin: left;
+    width: 200%;
     transform: scaleX(100%);
     /* transform: translateX(0); */
   }
@@ -143,7 +146,8 @@ nav ul li a {
   margin: 8px auto;
   background-color: #0f45a1;
   color: #fff;
-  border-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 #portfolio {
   display: flex;
@@ -186,23 +190,26 @@ form {
 }
 input,
 textarea {
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
   padding: 6px;
   cursor: pointer;
   box-shadow: 0px 0px 4px 0px grey;
   width: 200px;
 }
+input,
+textarea:focus{
+  outline: none;
+}
 button {
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
-  margin-top: 6px;
   padding: 8px;
   box-shadow: 0px 0px 4px 0px grey;
-  width: 74px;
-  height: 40px;
-  margin: 14px auto;
+  width: 100px;
+  height: 32px;
+  margin: 10px auto;
 }
 button:hover {
   background-color: #397be4;
